@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registrati</title>
+</head>
+<body>
+	 <h2>Benvenuto sul portale web</h2>
+    <p>Registrati tramite il seguente form:</p>
+    <form action="Registra" method="post">
+        Nome: <input type="text" name="nome" required/><br/><br/>
+        Cognome: <input type="text" name="cognome" /><br/><br/>
+        Sesso: 
+        <input type="radio" name="sesso" value="M" checked> Maschio
+        <input type="radio" name="sesso" value="F"> Femmina<br/><br/>
+        Luogo di nascita: <input type="text" name="luogoNascita" /><br/><br/>
+        Provincia: <input type="text" name="provincia" required/><br/><br/>
+        Data di nascita: <input type="date" name="dataNascita" required/><br/><br/>
+        Codice fiscale (16 caratteri): <input type="text" name="codiceFiscale" minlength="16" maxlength="16" required/><br/><br/>
+        Password: <input type="password" name="password" required/><br/><br/>
+        
+         Come ci hai trovato : 
+        <select name="trovato">
+            <option value="Facebook">Facebook</option>
+            <option value="Link Web">Link Web</option>
+            <option value="Discord">Discord</option>
+            <option value="Twitch">Twitch</option>
+            <option value="Twitter">Twitter</option>
+            <option value="Altro">Altro</option>
+        </select><br/><br/>
+        
+        <input type="submit" value="Registrati" />
+    </form>
+</body>
+</html>
